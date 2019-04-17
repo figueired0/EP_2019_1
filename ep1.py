@@ -114,16 +114,17 @@ def carregar_cenarios():
                     },
                     
             "quenstionar": {
-                    "titulo": "
-                    "decricao"
+                    "titulo": "O grande desafio",
+                    "decricao": " ",
                     "opcoes": {
-                            "charada":"
+                            "charada": " ",
+                            "saguão3": "voltar ao saguão"
                             }
                     },
                     
             "charada": {
                     "titulo": "O grande desafio",
-                    "descricão":
+                    "descricão": " ",
                     "opcoes": {
                             "saguão4": "voltar ao saguão"
                             }
@@ -149,48 +150,88 @@ def carregar_cenarios():
                             "sala":"ir para outra sala"
                             }
                     },
-            `   
+               
             "livros": {
-                    "titulo
-                    "descricao
+                    "titulo": " ",
+                    "descricao": " ",
                     "opcoes": {
-                            "livro 1": "Investigar livro 1"
-                            "livro 2": "Investigar livro 2"
+                            "livro 1": "Investigar livro 1",
+                            "livro 2": "Investigar livro 2",
                             "livro 3": "Investigar livro 3"
                             }
                     },
                     
-            "livro 1"
-            "livro 2"                    
-            "livro 3"
-                    
-                    
-            
-            "porta2": {
-                    "titulo": "Porta do banheiro",
-                    "descricao": "Voce chegou ao baheiro e agora possui a chave para abrir a porta,
+            "livro 1": {
+                    "titulo": " ",
+                    "descricao": " ",
                     "opcoes": {
-                            "abrir":"abrir a porta"
-                            "saguao4
+                            "livro 2": "Investigar livro 2",
+                            "livro 3": "Investigar livro 3"
+                            }
+                    },
+                    
+            "livro 2": {
+                    "titulo": " ",
+                    "descricao": " ",
+                    "opcoes": {
+                            "livro 1": "Investigar livro 1",
+                            "livro 3": "Investigar livro 3"
+                            }
+                    },
+                    
+            "livro 3": {
+                    "titulo": " ",
+                    "descricao": " ",
+                    "opcoes": {
+                            "saguão5": "voltar ao saguão"
                             }
                     },
             
-            "abrir": {
-                    "titulo": "O grande final"
-                    "descricao":
-                    },
-            
-            "saguão4": {
+            "saguão5": {
                     "titulo": "Saguão do Insper",
                     "descricao": "Voce está no saguão de entrada do insper",
                     "opcoes": {
                             "recepção1": "Ir á recepção",
                             "biblioteca2": "Ir á biblioteca",
-                            "banheiro2": "Ir ao banheiro",
+                            "banheiro3": "Ir ao banheiro",
                             "sala dos professores2": "Ir á sala dos professores"
                             }
                     },
+                    
+            "banheiro3": {
+                    "titulo": " ",
+                    "descricao": " ",
+                    "opcoes": {
+                            "porta2": "Abrir a porta 2"
+                            }
+                    },
             
+            "porta2": {
+                    "titulo": "Porta do banheiro",
+                    "descricao": "Voce chegou ao baheiro e agora possui a chave para abrir a porta",
+                    "opcoes": {
+                            "abrir":"abrir a porta",
+                            "saguão6": "voltar ao saguão"
+                            }
+                    },
+            
+            "abrir": {
+                    "titulo": "O grande final",
+                    "descricao": " "
+                    },
+            
+            "saguão6": {
+                    "titulo": "Saguão do Insper",
+                    "descricao": "Voce está no saguão de entrada do insper",
+                    "opcoes": {
+                            "ir embora"
+                            }
+                    },
+            
+            "ir embora": {
+                    "titulo": " ",
+                    "descricao": " "
+                    }
             }   
     nome_cenario_atual = "saguão"
     return cenarios, nome_cenario_atual
