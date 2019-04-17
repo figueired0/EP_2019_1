@@ -1,43 +1,56 @@
 # EP 2019-1: Escape Insper
 #
 # Alunos: 
-# - aluno A: Fulano da Silva, fulanos@insper.edu.br
-# - aluno B: Sicrano de Almeida, sicranoa1@insper.edu.br
+# - aluno A: Ana Clara Carneiro de Freitas, anaccf5@insper.edu.br
+# - aluno B: Igor Figueiredo, sicranoa1@insper.edu.br
 
 def carregar_cenarios():
-    cenarios = {
-        "inicio": {
-            "titulo": "Saguao do perigo",
-            "descricao": "Voce esta no saguao de entrada do insper",
-            "opcoes": {
-                "andar professor": "Tomar o elevador para o andar do professor",
-                "biblioteca": "Ir para a biblioteca"
-            }
-        },
-        "andar professor": {
-            "titulo": "Andar do desespero",
-            "descricao": "Voce chegou ao andar da sala do seu professor",
-            "opcoes": {
-                "inicio": "Tomar o elevador para o saguao de entrada",
-                "professor": "Falar com o professor"
-            }
-        },
-        "professor": {
-            "titulo": "O monstro do Python",
-            "descricao": "Voce foi pedir para o professor adiar o EP. "
-                         "O professor revelou que é um monstro disfarçado "
-                         "e devorou sua alma.",
-            "opcoes": {}
-        },
-        "biblioteca": {
-            "titulo": "Caverna da tranquilidade",
-            "descricao": "Voce esta na biblioteca",
-            "opcoes": {
-                "inicio": "Voltar para o saguao de entrada"
-            }
-        }
-    }
-    nome_cenario_atual = "inicio"
+    cenarios= {
+            "fase1_recepcao": {
+                    "titulo": "Saguao do Insper",
+                    "descricao": "Voce está no saguao de entrada do insper",
+                    "opcoes": {
+                            "recepção": "bem vindo a recepção do insper em que posso ajudá-lo?",
+                            "biblioteca": "a biblioteca está lotada, volte mais tarde",
+                            "banheiro": "O banheiro está sendo limpado, volte mais tarde",
+                            "sala dos professores": "A sala está em reuniao, volte mais tarde"
+                            }
+                    },
+            "banheiro": {
+                    "titulo": "banheiro",
+                    "descricao": "voce chegou no banheiro, será que raul está aqui? Dê uma olhada",
+                    "opcoes":{
+                            "saguão": "voltar ao saguão",
+                            "porta":"abrir a porta"
+                            }
+                    },
+            "sala dos professores": {
+                    "titulo": "Sala dos professores",
+                    "descricao": "voce entrou na sala dos professores e se depara com o professor humberto",
+                    "opcoes": {
+                            "pergunta":"perguntar sobre raul",
+                            "saguão":"voltar ao saguão"
+                            }
+                    },
+            "biblioteca": {
+                    "titulo": "biblioteca",
+                    "descricao": "voce cehgou a biblioteca do insper, o que deseja fazer?",
+                    "opcoes": {
+                            "livros":"procurar livros", 
+                            "saguão":"voltar ao sagão",
+                            "sala":"ir para outra sala"
+                            }
+                    },
+            "recepção":{
+                    "titulo":"recepção",
+                    "descricao":"bem vindo a recepção do insper em que posso ajuda-lo?",
+                    "opcoes":{
+                            "
+                            }
+                    
+                    }
+            }   
+    nome_cenario_atual = "fase1_recepcao"
     return cenarios, nome_cenario_atual
 
 
@@ -58,24 +71,28 @@ def main():
     game_over = False
     while not game_over:
         cenario_atual = cenarios[nome_cenario_atual]
-
-        # Aluno A: substitua este comentário pelo código para imprimir 
-        # o cenário atual.
+        print("-"*len(cenario_atual["titulo"]))
+        print(cenario_atual["titulo"])
+        print("-"*len(cenario_atual["titulo"]))
+        print(cenario_atual["descricao"])
+        print()
+        print("essas sao as opçoes que voce possui:")
+        print()
+        for k in (cenario_atual["opcoes"]).keys():
+                print (k)
 
         opcoes = cenario_atual['opcoes']
         if len(opcoes) == 0:
             print("Acabaram-se suas opções! Mwo mwo mwooooo...")
             game_over = True
         else:
-
-            # Aluno B: substitua este comentário e a linha abaixo pelo código
-            # para pedir a escolha do usuário.
             escolha = ""
-
+            escolha = input("para onde deseja ir?")
+            
             if escolha in opcoes:
                 nome_cenario_atual = escolha
             else:
-                print("Sua indecisão foi sua ruína!")
+                print("essa opção não existe")
                 game_over = True
 
     print("Você morreu!")
