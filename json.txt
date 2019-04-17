@@ -1,11 +1,4 @@
-# EP 2019-1: Escape Insper
-#
-# Alunos: 
-# - aluno A: Ana Clara Carneiro de Freitas, anaccf5@insper.edu.br
-# - aluno B: Igor Figueiredo, igorf1@insper.edu.br
-
-def carregar_cenarios():
-    cenarios= {
+{
             "saguão1": {
                     "titulo": "Saguão do Insper",
                     "descricao": "Voce está no saguão de entrada do insper",
@@ -192,52 +185,3 @@ def carregar_cenarios():
                     },
             
             }   
-    nome_cenario_atual = "saguão"
-    return cenarios, nome_cenario_atual
-
-
-def main():
-    print("------------------")
-    print("Na hora do sufoco!")
-    print("------------------")
-    print()
-    print("Parecia uma boa idéia: vou só jogar um pouquinho/assistir Netflix/"
-        "embaçar em geral. Amanhã eu começo o EP. Mas isso não deu certo...")
-    print()
-    print("É o dia de entregar o EP e você está muuuuito atrasado! Você está "
-        "na entrada do Insper, e quer procurar o professor para pedir um "
-        "adiamento do EP (boa sorte...)")
-    print()
-
-    cenarios, nome_cenario_atual = carregar_cenarios()
-
-    game_over = False
-    while not game_over:
-        cenario_atual = cenarios[nome_cenario_atual]
-        print("-"*len(cenario_atual["titulo"]))
-        print(cenario_atual["titulo"])
-        print("-"*len(cenario_atual["titulo"]))
-        print(cenario_atual["descricao"])
-        print()
-        print("essas sao as opçoes que voce possui:")
-        print()
-        for k,v in (cenario_atual["opcoes"]).items():
-                print (k,":",v)
-
-        opcoes = cenario_atual['opcoes']
-        if len(opcoes) == 0:
-            print("Acabaram-se suas opções! Mwo mwo mwooooo...")
-            game_over = True
-        else:
-            escolha = ""
-            escolha = input("para onde deseja ir?")
-            
-            if escolha in opcoes:
-                nome_cenario_atual = escolha
-            else:
-                print("essa opção não existe")
-                game_over = True
-                
-# Programa principal.
-if __name__ == "__main__":
-    main()
