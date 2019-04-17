@@ -2,11 +2,11 @@
 #
 # Alunos: 
 # - aluno A: Ana Clara Carneiro de Freitas, anaccf5@insper.edu.br
-# - aluno B: Igor Figueiredo, sicranoa1@insper.edu.br
+# - aluno B: Igor Figueiredo, igorf1@insper.edu.br
 
 def carregar_cenarios():
     cenarios= {
-            "fase1_recepcao": {
+            "saguão": {
                     "titulo": "Saguao do Insper",
                     "descricao": "Voce está no saguao de entrada do insper",
                     "opcoes": {
@@ -45,12 +45,14 @@ def carregar_cenarios():
                     "titulo":"recepção",
                     "descricao":"bem vindo a recepção do insper em que posso ajuda-lo?",
                     "opcoes":{
-                            "
+                            "perguntar":"onde raul está?",
+                            "saguão":"voltar ao saguão"
                             }
                     
-                    }
+                    },
+            
             }   
-    nome_cenario_atual = "fase1_recepcao"
+    nome_cenario_atual = "saguão"
     return cenarios, nome_cenario_atual
 
 
@@ -70,34 +72,32 @@ def main():
 
     game_over = False
     while not game_over:
-        cenario_atual = cenarios[nome_cenario_atual]
-        print("-"*len(cenario_atual["titulo"]))
-        print(cenario_atual["titulo"])
-        print("-"*len(cenario_atual["titulo"]))
-        print(cenario_atual["descricao"])
+        nome_cenario_atual = cenarios[nome_cenario_atual]
+        print("-"*len(nome_cenario_atual["titulo"]))
+        print(nome_cenario_atual["titulo"])
+        print("-"*len(nome_cenario_atual["titulo"]))
+        print(nome_cenario_atual["descricao"])
         print()
         print("essas sao as opçoes que voce possui:")
         print()
-        for k in (cenario_atual["opcoes"]).keys():
-                print (k)
+        for k,v in (nome_cenario_atual["opcoes"]).items():
+                print (k,":",v)
 
-        opcoes = cenario_atual['opcoes']
+        opcoes = nome_cenario_atual['opcoes']
         if len(opcoes) == 0:
-            print("Acabaram-se suas opções! Mwo mwo mwooooo...")
-            game_over = True
+            print("essa opção não existe")
+            game_over= True
+            escolha = input("para onde deseja ir?")
         else:
             escolha = ""
             escolha = input("para onde deseja ir?")
             
             if escolha in opcoes:
                 nome_cenario_atual = escolha
-            else:
+            while escolha not in opcoes:
                 print("essa opção não existe")
-                game_over = True
-
-    print("Você morreu!")
-
-
+                game_over= True
+                escolha = input("para onde deseja ir?")
 # Programa principal.
 if __name__ == "__main__":
     main()
