@@ -1,152 +1,182 @@
 {
-            "sagu√£o1": {
-                    "titulo": "Sagu√£o do Insper",
-                    "descricao": "Voce est√° no sagu√£o de entrada do insper",
+            "sagu„o 1": {
+                    "titulo": "Sagu„o do Insper",
+                    "descricao": "Voce est· no sagu„o de entrada do insper",
                     "opcoes": {
-                            "recep√ß√£o1": "Ir √° recep√ß√£o",
-                            "biblioteca1": "Ir √° biblioteca",
-                            "banheiro1": "Ir ao banheiro",
-                            "sala dos professores1": "Ir √° sala dos professores"
+                            "recepÁ„o 1": "Ir · recepÁ„o",
+                            "biblioteca 1": "Ir · biblioteca",
+                            "banheiro 1": "Ir ao banheiro",
+                            "sala dos professores 1": "Ir · sala dos professores"
                             }
                     },
                     
-            "biblioteca1": {
+            "biblioteca 1": {
                     "titulo": "Biblioteca",
-                    "descricao": "A biblioteca est√° lotada, volte mais tarde",
+                    "descricao": "A biblioteca est· lotada, volte mais tarde",
                     "opcoes": {
-                            "sagu√£o1": "voltar ao sagu√£o"
+                            "sagu„o 1": "voltar ao sagu„o"
                             }
                     },
                     
-            "banheiro1": {
+            "banheiro 1": {
                     "titulo": "Banheiro",
-                    "descricao": "O banheiro est√° sendo limpado, volte mais tarde",
+                    "descricao": "O banheiro est· sendo limpado, volte mais tarde",
                     "opcoes": {
-                            "sagu√£o1": "voltar ao sagu√£o"
+                            "sagu„o 1": "voltar ao sagu„o"
                             }
                     },
                     
-            "sala dos professores1": {
+            "sala dos professores 1": {
                     "titulo": "Sala dos professores",
-                    "descricao": "A sala est√° em reuniao, volte mais tarde",
+                    "descricao": "A sala est· em reuniao, volte mais tarde",
                     "opcoes": {
-                            "sagu√£o1": "voltar ao sagu√£o"
+                            "sagu„o 1": "voltar ao sagu„o"
                             }
                     },
                     
-            "recep√ß√£o1":{
-                    "titulo":"recep√ß√£o",
-                    "descricao":"bem vindo a recep√ß√£o do insper em que posso ajuda-lo?",
+            "recepÁ„o 1":{
+                    "titulo":"recepÁ„o",
+                    "descricao":"bem vindo a recepÁ„o do insper em que posso ajuda-lo?",
                     "opcoes":{
-                            "perguntar":"Pergunte onde raul est√°?",
-                            "sagu√£o1":"voltar ao sagu√£o"
+                            "perguntar":"Pergunte onde raul est·?",
+                            "sagu„o 1":"voltar ao sagu„o"
                             }
                     
                     },
                     
             "perguntar": {
                     "titulo": "A grande pista",
-                    "descricao": "ap√≥s perguntar sobre Raul, a recepcionista diz que o"
+                    "descricao": "apÛs perguntar sobre Raul, a recepcionista diz que o "
                                  "viu indo para o banheiro a pouco tempo",
                     "opcoes": {
-                            "sagu√£o2": "voltar ao sagu√£o"
+                            "sagu„o 2": "voltar ao sagu„o"
                             }
                     },
                     
-            "sagu√£o2": {
-                    "titulo": "Sagu√£o do Insper",
-                    "descricao": "Voce est√° no sagu√£o de entrada do insper",
+            "sagu„o 2": {
+                    "titulo": "Sagu„o do Insper",
+                    "descricao": "Voce est· no sagu„o de entrada do insper",
                     "opcoes": {
-                            "recep√ß√£o1": "Ir √° recep√ß√£o",
-                            "biblioteca1": "Ir √° biblioteca",
-                            "banheiro2": "Ir ao banheiro",
-                            "sala dos professores1": "Ir √° sala dos professores"
+                            "recepÁ„o 2": "Ir · recepÁ„o",
+                            "biblioteca 2": "Ir · biblioteca",
+                            "banheiro 2": "Ir ao banheiro",
+                            "sala dos professores 2": "Ir · sala dos professores"
+                            }
+                    },
+             "biblioteca 2": {
+                    "titulo": "Biblioteca",
+                    "descricao": "A biblioteca est· lotada, volte mais tarde",
+                    "opcoes": {
+                            "sagu„o 2": "voltar ao sagu„o"
                             }
                     },
                     
-            "Banheiro2": {
-                    "titulo": "banheiro",
-                    "descricao": "voce chegou no banheiro, ser√° que raul est√° aqui?"
-                                 "D√™ uma olhada!"
-                                 "Voc√™ escuta gritos, ser√° que deve investigar?",
+            "sala dos professores 2": {
+                    "titulo": "Sala dos professores",
+                    "descricao": "A sala est· em reuniao, volte mais tarde",
+                    "opcoes": {
+                            "sagu„o 2": "voltar ao sagu„o"
+                            }
+                    },
+                    
+            "recepÁ„o 2":{
+                    "titulo":"recepÁ„o",
+                    "descricao":"A recepcionista foi almoÁar, volte mais tarde",
                     "opcoes":{
-                            "sagu√£o2": "voltar ao sagu√£o",
-                            "porta1":"abrir a porta"
+                            "sagu„o 2":"voltar ao sagu„o"
                             }
                     },
                     
-            "porta1": {
+            "banheiro 2": {
+                    "titulo": "banheiro",
+                    "descricao": "voce chegou no banheiro, ser· que raul est· aqui? "
+                                 "DÍ uma olhada! "
+                                 "VocÍ escuta gritos, ser· que deve investigar?",
+                    "opcoes":{
+                            "sagu„o 2": "voltar ao sagu„o",
+                            "porta 1":"abrir a porta"
+                            }
+                    },
+                    
+            "porta 1": {
                     "titulo": "Porta trancada",
-                    "descri√ß√£o": "Apos tentar abrir a porta do banheiro"
-                                 "voce percebe que ela esta trancada"
-                                 "voce precisa de uma chave",
+                    "descricao": "Apos tentar abrir a porta do banheiro "
+                                 "voce percebe que ela esta trancada. "
+                                 "Voce precisa encontrar uma chave",
                     "opcoes": {
-                            "sagu√£o3": "voltar ao sagu√£o"
+                            "sagu„o 3": "voltar ao sagu„o"
                             }
                     },                            
                     
-            "sagu√£o3": {
-                    "titulo": "Sagu√£o do Insper",
-                    "descricao": "Voce est√° no sagu√£o de entrada do insper",
+            "sagu„o 3": {
+                    "titulo": "Sagu„o do Insper",
+                    "descricao": "Voce est· no sagu„o de entrada do insper",
                     "opcoes": {
-                            "recep√ß√£o1": "Ir √° recep√ß√£o",
-                            "biblioteca1": "Ir √° biblioteca",
-                            "banheiro2": "Ir ao banheiro",
-                            "sala dos professores2": "Ir √° sala dos professores"
+                            "biblioteca 3": "Ir · biblioteca",
+                            "sala dos professores 3": "Ir · sala dos professores"
                             }
                     },
                     
-            "Sala dos professores2": {
+             "biblioteca 3": {
+                    "titulo": "Biblioteca",
+                    "descricao": "A biblioteca est· lotada, volte mais tarde",
+                    "opcoes": {
+                            "sagu„o 3": "voltar ao sagu„o"
+                            }
+                    },
+                    
+            "sala dos professores 3": {
                     "titulo": "Sala dos professores",
-                    "descricao": "voce entrou na sala dos professores e se depara com"
+                    "descricao": "voce entrou na sala dos professores e se depara com "
                                  "o professor Humberto",
                     "opcoes": {
                             "questionar": "perguntar sobre Raul",
-                            "sagu√£o3": "voltar ao sagu√£o"
+                            "sagu„o 3": "voltar ao sagu„o"
                             }
                     },
                     
-            "quenstionar": {
+            "questionar": {
                     "titulo": "O grande desafio",
-                    "decricao": " ",
+                    "descricao": "Humberto acordou engraÁado hoje e decidiu que sÛ te contar·"
+                                 " onde Raul est· se vocÍ advinhar uma charada",
                     "opcoes": {
-                            "charada": " ",
-                            "sagu√£o3": "voltar ao sagu√£o"
+                            "charada": "perguntar sobre a charada",
+                            "sagu„o 3": "voltar ao sagu„o"
                             }
                     },
                     
             "charada": {
                     "titulo": "O grande desafio",
-                    "descric√£o": " ",
+                    "descricao": "Ai vai a charada: Qual È o animal que caminha sobre quatro pernas de "
+                                 "manh„, duas pernas durante a tarde e trÍs pernas a noite?",
                     "opcoes": {
-                            "sagu√£o4": "voltar ao sagu√£o"
+                            "sagu„o 4": "voltar ao sagu„o"
                             }
                     },
             
-            "sagu√£o4": {
-                    "titulo": "Sagu√£o do Insper",
-                    "descricao": "Voce est√° no sagu√£o de entrada do insper",
+            "sagu„o 4": {
+                    "titulo": "Sagu„o do Insper",
+                    "descricao": "Voce est· no sagu„o de entrada do insper",
                     "opcoes": {
-                            "recep√ß√£o1": "Ir √° recep√ß√£o",
-                            "biblioteca2": "Ir √° biblioteca",
-                            "banheiro2": "Ir ao banheiro",
-                            "sala dos professores2": "Ir √° sala dos professores"
+                            "biblioteca 4": "Ir · biblioteca",
+                            "banheiro 4": "Ir ao banheiro",
                             }
                     },
 
-            "Biblioteca2": {
+            "biblioteca 4": {
                     "titulo": "biblioteca",
-                    "descricao": "voce cehgou a biblioteca do insper, o que deseja fazer?",
+                    "descricao": "voce chegou · biblioteca do insper, o que deseja fazer?",
                     "opcoes": {
                             "livros":"procurar livros", 
-                            "sagu√£o4":"voltar ao sag√£o",
-                            "sala":"ir para outra sala"
+                            "sagu„o 4":"voltar ao sag„o"
                             }
                     },
                
             "livros": {
-                    "titulo": " ",
-                    "descricao": " ",
+                    "titulo": "A procura da chave",
+                    "descricao": "Dentre todos as descriÁıes que havia no bilhete de "
+                                 "Humberto, vocÍ encontrou trÍs livros onde a chave "
+                                 "pode estar",
                     "opcoes": {
                             "livro 1": "Investigar livro 1",
                             "livro 2": "Investigar livro 2",
@@ -155,8 +185,10 @@
                     },
                     
             "livro 1": {
-                    "titulo": " ",
-                    "descricao": " ",
+                    "titulo": "Livro 1: M„os a obra, construindo um banheiro",
+                    "descricao": "Ao pegar o livro na m„o, vocÍ decide folea-lo "
+                                 "e n„o encontra nada. Sendo assim, vocÍ decide "
+                                 "olhar o prÛximo",
                     "opcoes": {
                             "livro 2": "Investigar livro 2",
                             "livro 3": "Investigar livro 3"
@@ -164,8 +196,10 @@
                     },
                     
             "livro 2": {
-                    "titulo": " ",
-                    "descricao": " ",
+                    "titulo": "Livro 2: O enigma do banheiro ",
+                    "descricao": "Ao pegar o livro na m„o, vocÍ decide folea-lo "
+                                 "e n„o encontra nada. Sendo assim, vocÍ decide "
+                                 "olhar o prÛximo",
                     "opcoes": {
                             "livro 1": "Investigar livro 1",
                             "livro 3": "Investigar livro 3"
@@ -173,56 +207,89 @@
                     },
                     
             "livro 3": {
-                    "titulo": " ",
-                    "descricao": " ",
+                    "titulo": "Livro 3: Pythopolis, em busca da chave perdida",
+                    "descricao": "Ao pegar o livro na m„o, vocÍ decide folea-lo "
+                                 "e encontra algo misterioso no meio. "
+                                 "(...) "
+                                 "ApÛs investigar profundamente, vocÍ perebe que "
+                                 "esta È a chave desejada para abrir o banheiro "
+                                 "e salvar Raul. "
+                                 "Ser· que vocÍ conseguir· adiar o EP1?",
                     "opcoes": {
-                            "sagu√£o5": "voltar ao sagu√£o"
+                            "sagu„o 5": "voltar ao sagu„o",
+                            "sala":"ir para outra sala"
                             }
                     },
             
-            "sagu√£o5": {
-                    "titulo": "Sagu√£o do Insper",
-                    "descricao": "Voce est√° no sagu√£o de entrada do insper",
+            "sala": {
+                    "titulo": "teletransporte",
+                    "descricao": "vocÍ por ir diretamente para outro sala. Basta apenas "
+                                 "digitar o nome da sala desejada "
+                                 "DICA: digite apenas o nome da sala (Sem numeros)",
+                                 },
+                    
+            "banheiro 4": {
+                    "titulo": "Banheiro",
+                    "descricao": "VocÍ ainda n„o possui a chave, volte mais tarde",
                     "opcoes": {
-                            "recep√ß√£o1": "Ir √° recep√ß√£o",
-                            "biblioteca2": "Ir √° biblioteca",
-                            "banheiro3": "Ir ao banheiro",
-                            "sala dos professores2": "Ir √° sala dos professores"
+                            "sagu„o 4": "voltar ao sagu„o"
+                            }
+                    },
+            
+            "sagu„o 5": {
+                    "titulo": "Sagu„o do Insper",
+                    "descricao": "Voce est· no sagu„o de entrada do insper",
+                    "opcoes": {
+                            "banheiro": "Ir ao banheiro",
                             }
                     },
                     
-            "banheiro3": {
-                    "titulo": " ",
-                    "descricao": " ",
+            "banheiro": {
+                    "titulo": "O grande fiinal",
+                    "descricao": "VocÍ chegou ao banheiro e agora possui a chave para "
+                                 "abrir a t„o estimada porta. "
+                                 "O que vocÍ ir· fazer?",
                     "opcoes": {
-                            "porta2": "Abrir a porta 2"
+                            "porta 2": "Abrir a porta"
                             }
                     },
             
-            "porta2": {
+            "porta 2": {
                     "titulo": "Porta do banheiro",
-                    "descricao": "Voce chegou ao baheiro e agora possui a chave para abrir a porta",
+                    "descricao": "VocÍ coloca a chave na maceneta e...",
                     "opcoes": {
                             "abrir":"abrir a porta",
-                            "sagu√£o6": "voltar ao sagu√£o"
+                            "sagu„o 6": " tirar a chave e voltar ao sagu„o"
                             }
                     },
             
             "abrir": {
-                    "titulo": "O grande final",
-                    "descricao": " "
+                    "titulo": "Adiantamento do EP",
+                    "descricao": "VÙce cola a chave na maceneta e, ao abri-la "
+                                 "(...)  "
+                                 "Voce se depara com Raul, desolado e perdido no canto "
+                                 "do banheiro. "
+                                 "PorÈm, no momento em que h· troca de olhares, a felicidade "
+                                 "È estampada em seu rosto e IMEDIATAMENTE, Raul pula em vocÍ "
+                                 "e te agradece ferverosamente. "
+                                 "VocÍ aproveita a ocasiao para perguntar sobre o EP1 e se seria "
+                                 "possivel o adiantamento desse. "
+                                 "Devido a extrema gratid„o de Raul, ele te concede mais 1h a mais "
+                                 "para entrega."
                     },
             
-            "sagu√£o6": {
-                    "titulo": "Sagu√£o do Insper",
-                    "descricao": "Voce est√° no sagu√£o de entrada do insper",
+            "sagu„o 6": {
+                    "titulo": "Sagu„o do Insper",
+                    "descricao": "Voce est· no sagu„o de entrada do insper",
                     "opcoes": {
-                            "ir embora"
+                            "ir embora": "Deixar o Insper"
                             }
                     },
             
             "ir embora": {
                     "titulo": " ",
-                    "descricao": " "
+                    "descricao": "VocÍ n„o gosta de Raul e, portanto, decide mante-lo trancado "
+                                 "no banheiro para sempre. "
+                                 "Raul morre de fome e solid„o e vocÍ n„o precisa entregar o EP",
                     }
             }

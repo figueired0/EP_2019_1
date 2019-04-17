@@ -6,154 +6,184 @@
 
 def carregar_cenarios():
     cenarios= {
-            "saguão1": {
+            "saguão 1": {
                     "titulo": "Saguão do Insper",
                     "descricao": "Voce está no saguão de entrada do insper",
                     "opcoes": {
-                            "recepção1": "Ir á recepção",
-                            "biblioteca1": "Ir á biblioteca",
-                            "banheiro1": "Ir ao banheiro",
-                            "sala dos professores1": "Ir á sala dos professores"
+                            "recepção 1": "Ir á recepção",
+                            "biblioteca 1": "Ir á biblioteca",
+                            "banheiro 1": "Ir ao banheiro",
+                            "sala dos professores 1": "Ir á sala dos professores"
                             }
                     },
                     
-            "biblioteca1": {
+            "biblioteca 1": {
                     "titulo": "Biblioteca",
                     "descricao": "A biblioteca está lotada, volte mais tarde",
                     "opcoes": {
-                            "saguão1": "voltar ao saguão"
+                            "saguão 1": "voltar ao saguão"
                             }
                     },
                     
-            "banheiro1": {
+            "banheiro 1": {
                     "titulo": "Banheiro",
                     "descricao": "O banheiro está sendo limpado, volte mais tarde",
                     "opcoes": {
-                            "saguão1": "voltar ao saguão"
+                            "saguão 1": "voltar ao saguão"
                             }
                     },
                     
-            "sala dos professores1": {
+            "sala dos professores 1": {
                     "titulo": "Sala dos professores",
                     "descricao": "A sala está em reuniao, volte mais tarde",
                     "opcoes": {
-                            "saguão1": "voltar ao saguão"
+                            "saguão 1": "voltar ao saguão"
                             }
                     },
                     
-            "recepção1":{
+            "recepção 1":{
                     "titulo":"recepção",
                     "descricao":"bem vindo a recepção do insper em que posso ajuda-lo?",
                     "opcoes":{
                             "perguntar":"Pergunte onde raul está?",
-                            "saguão1":"voltar ao saguão"
+                            "saguão 1":"voltar ao saguão"
                             }
                     
                     },
                     
             "perguntar": {
                     "titulo": "A grande pista",
-                    "descricao": "após perguntar sobre Raul, a recepcionista diz que o"
+                    "descricao": "após perguntar sobre Raul, a recepcionista diz que o "
                                  "viu indo para o banheiro a pouco tempo",
                     "opcoes": {
-                            "saguão2": "voltar ao saguão"
+                            "saguão 2": "voltar ao saguão"
                             }
                     },
                     
-            "saguão2": {
+            "saguão 2": {
                     "titulo": "Saguão do Insper",
                     "descricao": "Voce está no saguão de entrada do insper",
                     "opcoes": {
-                            "recepção1": "Ir á recepção",
-                            "biblioteca1": "Ir á biblioteca",
-                            "banheiro2": "Ir ao banheiro",
-                            "sala dos professores1": "Ir á sala dos professores"
+                            "recepção 2": "Ir á recepção",
+                            "biblioteca 2": "Ir á biblioteca",
+                            "banheiro 2": "Ir ao banheiro",
+                            "sala dos professores 2": "Ir á sala dos professores"
+                            }
+                    },
+             "biblioteca 2": {
+                    "titulo": "Biblioteca",
+                    "descricao": "A biblioteca está lotada, volte mais tarde",
+                    "opcoes": {
+                            "saguão 2": "voltar ao saguão"
                             }
                     },
                     
-            "Banheiro2": {
+            "sala dos professores 2": {
+                    "titulo": "Sala dos professores",
+                    "descricao": "A sala está em reuniao, volte mais tarde",
+                    "opcoes": {
+                            "saguão 2": "voltar ao saguão"
+                            }
+                    },
+                    
+            "recepção 2":{
+                    "titulo":"recepção",
+                    "descricao":"A recepcionista foi almoçar, volte mais tarde",
+                    "opcoes":{
+                            "saguão 2":"voltar ao saguão"
+                            }
+                    },
+                    
+            "banheiro 2": {
                     "titulo": "banheiro",
-                    "descricao": "voce chegou no banheiro, será que raul está aqui?"
-                                 "Dê uma olhada!"
+                    "descricao": "voce chegou no banheiro, será que raul está aqui? "
+                                 "Dê uma olhada! "
                                  "Você escuta gritos, será que deve investigar?",
                     "opcoes":{
-                            "saguão2": "voltar ao saguão",
-                            "porta1":"abrir a porta"
+                            "saguão 2": "voltar ao saguão",
+                            "porta 1":"abrir a porta"
                             }
                     },
                     
-            "porta1": {
+            "porta 1": {
                     "titulo": "Porta trancada",
-                    "descrição": "Apos tentar abrir a porta do banheiro"
-                                 "voce percebe que ela esta trancada"
-                                 "voce precisa de uma chave",
+                    "descricao": "Apos tentar abrir a porta do banheiro "
+                                 "voce percebe que ela esta trancada. "
+                                 "Voce precisa encontrar uma chave",
                     "opcoes": {
-                            "saguão3": "voltar ao saguão"
+                            "saguão 3": "voltar ao saguão"
                             }
                     },                            
                     
-            "saguão3": {
+            "saguão 3": {
                     "titulo": "Saguão do Insper",
                     "descricao": "Voce está no saguão de entrada do insper",
                     "opcoes": {
-                            "recepção1": "Ir á recepção",
-                            "biblioteca1": "Ir á biblioteca",
-                            "banheiro2": "Ir ao banheiro",
-                            "sala dos professores2": "Ir á sala dos professores"
+                            "biblioteca 3": "Ir á biblioteca",
+                            "sala dos professores 3": "Ir á sala dos professores"
                             }
                     },
                     
-            "Sala dos professores2": {
+             "biblioteca 3": {
+                    "titulo": "Biblioteca",
+                    "descricao": "A biblioteca está lotada, volte mais tarde",
+                    "opcoes": {
+                            "saguão 3": "voltar ao saguão"
+                            }
+                    },
+                    
+            "sala dos professores 3": {
                     "titulo": "Sala dos professores",
-                    "descricao": "voce entrou na sala dos professores e se depara com"
+                    "descricao": "voce entrou na sala dos professores e se depara com "
                                  "o professor Humberto",
                     "opcoes": {
                             "questionar": "perguntar sobre Raul",
-                            "saguão3": "voltar ao saguão"
+                            "saguão 3": "voltar ao saguão"
                             }
                     },
                     
-            "quenstionar": {
+            "questionar": {
                     "titulo": "O grande desafio",
-                    "decricao": " ",
+                    "descricao": "Humberto acordou engraçado hoje e decidiu que só te contará"
+                                 " onde Raul está se você advinhar uma charada",
                     "opcoes": {
-                            "charada": " ",
-                            "saguão3": "voltar ao saguão"
+                            "charada": "perguntar sobre a charada",
+                            "saguão 3": "voltar ao saguão"
                             }
                     },
                     
             "charada": {
                     "titulo": "O grande desafio",
-                    "descricão": " ",
+                    "descricao": "Ai vai a charada: Qual é o animal que caminha sobre quatro pernas de "
+                                 "manhã, duas pernas durante a tarde e três pernas a noite?",
                     "opcoes": {
-                            "saguão4": "voltar ao saguão"
+                            "saguão 4": "voltar ao saguão"
                             }
                     },
             
-            "saguão4": {
+            "saguão 4": {
                     "titulo": "Saguão do Insper",
                     "descricao": "Voce está no saguão de entrada do insper",
                     "opcoes": {
-                            "recepção1": "Ir á recepção",
-                            "biblioteca2": "Ir á biblioteca",
-                            "banheiro2": "Ir ao banheiro",
-                            "sala dos professores2": "Ir á sala dos professores"
+                            "biblioteca 4": "Ir á biblioteca",
+                            "banheiro 4": "Ir ao banheiro",
                             }
                     },
 
-            "Biblioteca2": {
+            "biblioteca 4": {
                     "titulo": "biblioteca",
-                    "descricao": "voce cehgou a biblioteca do insper, o que deseja fazer?",
+                    "descricao": "voce chegou á biblioteca do insper, o que deseja fazer?",
                     "opcoes": {
                             "livros":"procurar livros", 
-                            "saguão4":"voltar ao sagão",
-                            "sala":"ir para outra sala"
+                            "saguão 4":"voltar ao sagão"
                             }
                     },
                
             "livros": {
-                    "titulo": " ",
-                    "descricao": " ",
+                    "titulo": "A procura da chave",
+                    "descricao": "Dentre todos as descrições que havia no bilhete de "
+                                 "Humberto, você encontrou três livros onde a chave "
+                                 "pode estar",
                     "opcoes": {
                             "livro 1": "Investigar livro 1",
                             "livro 2": "Investigar livro 2",
@@ -162,8 +192,10 @@ def carregar_cenarios():
                     },
                     
             "livro 1": {
-                    "titulo": " ",
-                    "descricao": " ",
+                    "titulo": "Livro 1: Mãos a obra, construindo um banheiro",
+                    "descricao": "Ao pegar o livro na mão, você decide folea-lo "
+                                 "e não encontra nada. Sendo assim, você decide "
+                                 "olhar o próximo",
                     "opcoes": {
                             "livro 2": "Investigar livro 2",
                             "livro 3": "Investigar livro 3"
@@ -171,8 +203,10 @@ def carregar_cenarios():
                     },
                     
             "livro 2": {
-                    "titulo": " ",
-                    "descricao": " ",
+                    "titulo": "Livro 2: O enigma do banheiro ",
+                    "descricao": "Ao pegar o livro na mão, você decide folea-lo "
+                                 "e não encontra nada. Sendo assim, você decide "
+                                 "olhar o próximo",
                     "opcoes": {
                             "livro 1": "Investigar livro 1",
                             "livro 3": "Investigar livro 3"
@@ -180,60 +214,93 @@ def carregar_cenarios():
                     },
                     
             "livro 3": {
-                    "titulo": " ",
-                    "descricao": " ",
+                    "titulo": "Livro 3: Pythopolis, em busca da chave perdida",
+                    "descricao": "Ao pegar o livro na mão, você decide folea-lo "
+                                 "e encontra algo misterioso no meio. "
+                                 "(...) "
+                                 "Após investigar profundamente, você perebe que "
+                                 "esta é a chave desejada para abrir o banheiro "
+                                 "e salvar Raul. "
+                                 "Será que você conseguirá adiar o EP1?",
                     "opcoes": {
-                            "saguão5": "voltar ao saguão"
+                            "saguão 5": "voltar ao saguão",
+                            "sala":"ir para outra sala"
                             }
                     },
             
-            "saguão5": {
+            "sala": {
+                    "titulo": "teletransporte",
+                    "descricao": "você por ir diretamente para outro sala. Basta apenas "
+                                 "digitar o nome da sala desejada "
+                                 "DICA: digite apenas o nome da sala (Sem numeros)",
+                                 },
+                    
+            "banheiro 4": {
+                    "titulo": "Banheiro",
+                    "descricao": "Você ainda não possui a chave, volte mais tarde",
+                    "opcoes": {
+                            "saguão 4": "voltar ao saguão"
+                            }
+                    },
+            
+            "saguão 5": {
                     "titulo": "Saguão do Insper",
                     "descricao": "Voce está no saguão de entrada do insper",
                     "opcoes": {
-                            "recepção1": "Ir á recepção",
-                            "biblioteca2": "Ir á biblioteca",
-                            "banheiro3": "Ir ao banheiro",
-                            "sala dos professores2": "Ir á sala dos professores"
+                            "banheiro": "Ir ao banheiro",
                             }
                     },
                     
-            "banheiro3": {
-                    "titulo": " ",
-                    "descricao": " ",
+            "banheiro": {
+                    "titulo": "O grande fiinal",
+                    "descricao": "Você chegou ao banheiro e agora possui a chave para "
+                                 "abrir a tão estimada porta. "
+                                 "O que você irá fazer?",
                     "opcoes": {
-                            "porta2": "Abrir a porta 2"
+                            "porta 2": "Abrir a porta"
                             }
                     },
             
-            "porta2": {
+            "porta 2": {
                     "titulo": "Porta do banheiro",
-                    "descricao": "Voce chegou ao baheiro e agora possui a chave para abrir a porta",
+                    "descricao": "Você coloca a chave na maceneta e...",
                     "opcoes": {
                             "abrir":"abrir a porta",
-                            "saguão6": "voltar ao saguão"
+                            "saguão 6": " tirar a chave e voltar ao saguão"
                             }
                     },
             
             "abrir": {
-                    "titulo": "O grande final",
-                    "descricao": " "
+                    "titulo": "Adiantamento do EP",
+                    "descricao": "Vôce cola a chave na maceneta e, ao abri-la "
+                                 "(...)  "
+                                 "Voce se depara com Raul, desolado e perdido no canto "
+                                 "do banheiro. "
+                                 "Porém, no momento em que há troca de olhares, a felicidade "
+                                 "é estampada em seu rosto e IMEDIATAMENTE, Raul pula em você "
+                                 "e te agradece ferverosamente. "
+                                 "Você aproveita a ocasiao para perguntar sobre o EP1 e se seria "
+                                 "possivel o adiantamento desse. "
+                                 "Devido a extrema gratidão de Raul, ele te concede mais 1h a mais "
+                                 "para entrega."
                     },
             
-            "saguão6": {
+            "saguão 6": {
                     "titulo": "Saguão do Insper",
                     "descricao": "Voce está no saguão de entrada do insper",
                     "opcoes": {
-                            "ir embora"
+                            "ir embora": "Deixar o Insper"
                             }
                     },
             
             "ir embora": {
                     "titulo": " ",
-                    "descricao": " "
+                    "descricao": "Você não gosta de Raul e, portanto, decide mante-lo trancado "
+                                 "no banheiro para sempre. "
+                                 "Raul morre de fome e solidão e você não precisa entregar o EP",
                     }
             }   
-    nome_cenario_atual = "saguão"
+    nome_cenario_atual = "saguão 1"
     return cenarios, nome_cenario_atual
 
 
@@ -254,18 +321,19 @@ def main():
 
     game_over = False
     while not game_over:
-        cenario_atual = cenarios[nome_cenario_atual]
-        print("-"*len(cenario_atual["titulo"]))
-        print(cenario_atual["titulo"])
-        print("-"*len(cenario_atual["titulo"]))
-        print(cenario_atual["descricao"])
+        nome_cenario_atual = cenarios[nome_cenario_atual]
+        print("-"*len(nome_cenario_atual["titulo"]))
+        print(nome_cenario_atual["titulo"])
+        print("-"*len(nome_cenario_atual["titulo"]))
+        print(nome_cenario_atual["descricao"])
         print()
-        print("essas sao as opçoes que voce possui:")
+        print("essas são as opções que você possui:")
         print()
-        for k,v in (cenario_atual["opcoes"]).items():
+        
+        for k,v in (nome_cenario_atual["opcoes"]).items():
                 print (k,":",v)
 
-        opcoes = cenario_atual['opcoes']
+        opcoes = nome_cenario_atual['opcoes']
         if len(opcoes) == 0:
             print("Acabaram-se suas opções! Mwo mwo mwooooo...")
             game_over = True
