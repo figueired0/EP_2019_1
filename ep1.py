@@ -137,7 +137,6 @@ def carregar_cenarios():
                     "titulo": "Sala dos professores",
                     "descricao": "voce entrou na sala dos professores e se depara com "
                                  "o professor Humberto",
-<<<<<<< HEAD
                     "opcoes": {
                             "questionar": "perguntar sobre Raul",
                             "saguão 3": "voltar ao saguão"
@@ -190,41 +189,6 @@ def carregar_cenarios():
                             "banheiro 4": "Ir ao banheiro"
                             }
                     },
-=======
-                    "opcoes": {
-                            "questionar": "perguntar sobre Raul",
-                            "saguão 3": "voltar ao saguão"
-                            }
-                    },
-                    
-            "questionar": {
-                    "titulo": "O grande desafio",
-                    "descricao": "Humberto acordou engraçado hoje e decidiu que só te contará"
-                                 " onde Raul está se você advinhar uma charada",
-                    "opcoes": {
-                            "charada": "perguntar sobre a charada",
-                            "saguão 3": "voltar ao saguão"
-                            }
-                    },
-                    
-            "charada": {
-                    "titulo": "O grande desafio",
-                    "descricao": "Ai vai a charada: Qual é o animal que caminha sobre quatro pernas de "
-                                 "manhã, duas pernas durante a tarde e três pernas a noite?",
-                    "opcoes": {
-                            "saguão 4": "voltar ao saguão"
-                            }
-                    },
-            
-            "saguão 4": {
-                    "titulo": "Saguão do Insper",
-                    "descricao": "Voce está no saguão de entrada do insper",
-                    "opcoes": {
-                            "biblioteca 4": "Ir á biblioteca",
-                            "banheiro 4": "Ir ao banheiro",
-                            }
-                    },
->>>>>>> 79f7dd29ab5bcb00ba1db33e8f30fb31e2cd27d8
 
             "biblioteca 4": {
                     "titulo": "biblioteca",
@@ -232,7 +196,6 @@ def carregar_cenarios():
                     "opcoes": {
                             "livros":"procurar livros", 
                             "saguão 4":"voltar ao sagão"
-<<<<<<< HEAD
                             }
                     },
                
@@ -354,117 +317,6 @@ def carregar_cenarios():
                                  "para entrega.",
                     },
             
-=======
-                            }
-                    },
-               
-            "livros": {
-                    "titulo": "A procura da chave",
-                    "descricao": "Dentre todos as descrições que havia no bilhete de "
-                                 "Humberto, você encontrou três livros onde a chave "
-                                 "pode estar",
-                    "opcoes": {
-                            "livro 1": "Investigar livro 1",
-                            "livro 2": "Investigar livro 2",
-                            "livro 3": "Investigar livro 3"
-                            }
-                    },
-                    
-            "livro 1": {
-                    "titulo": "Livro 1: Mãos a obra, construindo um banheiro",
-                    "descricao": "Ao pegar o livro na mão, você decide folea-lo "
-                                 "e não encontra nada. Sendo assim, você decide "
-                                 "olhar o próximo",
-                    "opcoes": {
-                            "livro 2": "Investigar livro 2",
-                            "livro 3": "Investigar livro 3"
-                            }
-                    },
-                    
-            "livro 2": {
-                    "titulo": "Livro 2: O enigma do banheiro ",
-                    "descricao": "Ao pegar o livro na mão, você decide folea-lo "
-                                 "e não encontra nada. Sendo assim, você decide "
-                                 "olhar o próximo",
-                    "opcoes": {
-                            "livro 1": "Investigar livro 1",
-                            "livro 3": "Investigar livro 3"
-                            }
-                    },
-                    
-            "livro 3": {
-                    "titulo": "Livro 3: Pythopolis, em busca da chave perdida",
-                    "descricao": "Ao pegar o livro na mão, você decide folea-lo "
-                                 "e encontra algo misterioso no meio. "
-                                 "(...) "
-                                 "Após investigar profundamente, você perebe que "
-                                 "esta é a chave desejada para abrir o banheiro "
-                                 "e salvar Raul. "
-                                 "Será que você conseguirá adiar o EP1?",
-                    "opcoes": {
-                            "saguão 5": "voltar ao saguão",
-                            "sala":"ir para outra sala"
-                            }
-                    },
-            
-            "sala": {
-                    "titulo": "teletransporte",
-                    "descricao": "você por ir diretamente para outro sala. Basta apenas "
-                                 "digitar o nome da sala desejada "
-                                 "DICA: digite apenas o nome da sala (Sem numeros)",
-                                 },
-                    
-            "banheiro 4": {
-                    "titulo": "Banheiro",
-                    "descricao": "Você ainda não possui a chave, volte mais tarde",
-                    "opcoes": {
-                            "saguão 4": "voltar ao saguão"
-                            }
-                    },
-            
-            "saguão 5": {
-                    "titulo": "Saguão do Insper",
-                    "descricao": "Voce está no saguão de entrada do insper",
-                    "opcoes": {
-                            "banheiro": "Ir ao banheiro",
-                            }
-                    },
-                    
-            "banheiro": {
-                    "titulo": "O grande fiinal",
-                    "descricao": "Você chegou ao banheiro e agora possui a chave para "
-                                 "abrir a tão estimada porta. "
-                                 "O que você irá fazer?",
-                    "opcoes": {
-                            "porta 2": "Abrir a porta"
-                            }
-                    },
-            
-            "porta 2": {
-                    "titulo": "Porta do banheiro",
-                    "descricao": "Você coloca a chave na maceneta e...",
-                    "opcoes": {
-                            "abrir":"abrir a porta",
-                            "saguão 6": " tirar a chave e voltar ao saguão"
-                            }
-                    },
-            
-            "abrir": {
-                    "titulo": "Adiantamento do EP",
-                    "descricao": "Vôce cola a chave na maceneta e, ao abri-la "
-                                 "(...)  "
-                                 "Voce se depara com Raul, desolado e perdido no canto "
-                                 "do banheiro. "
-                                 "Porém, no momento em que há troca de olhares, a felicidade "
-                                 "é estampada em seu rosto e IMEDIATAMENTE, Raul pula em você "
-                                 "e te agradece ferverosamente. "
-                                 "Você aproveita a ocasiao para perguntar sobre o EP1 e se seria "
-                                 "possivel o adiantamento desse. "
-                                 "Devido a extrema gratidão de Raul, ele te concede mais 1h a mais "
-                                 "para entrega."
-                    },
-            
->>>>>>> 79f7dd29ab5bcb00ba1db33e8f30fb31e2cd27d8
             "saguão 6": {
                     "titulo": "Saguão do Insper",
                     "descricao": "Voce está no saguão de entrada do insper",
@@ -501,7 +353,6 @@ def main():
 
     game_over = False
     while not game_over:
-<<<<<<< HEAD
         
         cenario_atual = cenarios[nome_cenario_atual]
         
@@ -518,19 +369,6 @@ def main():
         
             #Imprimindo as opções
         #CONDIÇÃO
-=======
-        nome_cenario_atual = cenarios[nome_cenario_atual]
-        print("-"*len(nome_cenario_atual["titulo"]))
-        print(nome_cenario_atual["titulo"])
-        print("-"*len(nome_cenario_atual["titulo"]))
-        print(nome_cenario_atual["descricao"])
-        print()
-        print("essas são as opções que você possui:")
-        print()
-        
-        for k,v in (nome_cenario_atual["opcoes"]).items():
-                print (k,":",v)
->>>>>>> 79f7dd29ab5bcb00ba1db33e8f30fb31e2cd27d8
 
         opcoes = cenario_atual['opcoes']
         print("-------------------")
@@ -539,16 +377,11 @@ def main():
         print("-------------------")
                         
         if len(opcoes) == 0:
-<<<<<<< HEAD
             print("Acabaram-se suas opções!")
-=======
-            print("Acabaram-se suas opções! Mwo mwo mwooooo...")
->>>>>>> 79f7dd29ab5bcb00ba1db33e8f30fb31e2cd27d8
             game_over = True
         else:
             escolha = input("para onde deseja ir ?")
             if escolha in opcoes:
-<<<<<<< HEAD
                 cenario_atual = escolha
                 nome_cenario_atual= cenario_atual
                     
@@ -733,13 +566,6 @@ def main():
                 
 
 print ("FIM")
-=======
-                nome_cenario_atual = escolha
-            else:
-                print("essa opção não existe")
-                game_over = True
-                
->>>>>>> 79f7dd29ab5bcb00ba1db33e8f30fb31e2cd27d8
 # Programa principal.
 if __name__ == "__main__":
     main()
