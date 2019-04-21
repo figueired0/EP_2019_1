@@ -4,6 +4,7 @@
 # - aluno A: Ana Clara Carneiro de Freitas, anaccf5@insper.edu.br
 # - aluno B: Igor Figueiredo, igorf1@insper.edu.br
 
+
 def carregar_cenarios():
     #Dicionário
     cenarios= {
