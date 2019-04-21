@@ -170,15 +170,6 @@ def carregar_cenarios():
                                  "Livro 3: Pythopolis, em busca da chave perdida",
                     "opcoes": {
                             "saguão 4": "voltar ao saguão",
-                            "inventario": " deseja adicionar o bilhete em seu inventário? "
-                            }
-                    },
-            "inventario":{
-                    "titulo":"inventário",
-                    "descricao":"esse é seu inventário: "
-                                "você possui/adicionou nele o bilhete dado por Humberto ",
-                    "opcoes":{
-                            "saguão 4": "voltar para o saguão"
                             }
                     },
             
@@ -246,23 +237,13 @@ def carregar_cenarios():
                     "opcoes": {
                             "saguão": "voltar ao saguão",
                             "sala":"ir para outra sala",
-                            "inventário":"adicionar a chave ao inventário"
-                            }
-                    },
-            "inventário":{
-                    "titulo": "inventário",
-                    "descricao":"esse é seu inventário: "
-                                "você possui/adicionou nele o bilhete dado por Humberto e a chave encontrada na biblioteca ",
-                    "opcoes":{
-                            "saguão":"voltar ao saguão",
-                            "sala":"ir para outra sala"
                             }
                     },
             
             "sala dos professores": {
                     "titulo": "Sala dos professores",
                     "descricao": "você chegou na sala dos professores e, assim que a"
-                                 "briu a porta, se deparou com Humberto aula de yoga "
+                                 "briu a porta, se deparou com Humberto fazendo aula de yoga "
                                  "com Fabio Roberto Miranda."
                                  " Você decidiu abandorar a missão de salvar Raul e "
                                  "fazer yoga com eles",
@@ -355,6 +336,7 @@ def main():
     game_over = False
     while not game_over:
         
+        inventario=[]
         cenario_atual = cenarios[nome_cenario_atual]
         
         #Imprimindo o cenário
@@ -363,14 +345,9 @@ def main():
         print("-"*len(cenario_atual["titulo"]))
         print(cenario_atual["descricao"])
         print()
+        
+        #Imprimindo as opções
         print("essas são as opções que você possui:")
-        
-        
-                
-        
-            #Imprimindo as opções
-        #CONDIÇÃO
-
         opcoes = cenario_atual['opcoes']
         print("-------------------")
         for k,v in (cenario_atual["opcoes"]).items():
@@ -402,7 +379,7 @@ def main():
                     print()
                     for k,v in (cenario_atual["opcoes"]).items():
                         print (k,":",v)
-                    tentativa=0
+                    tentativa=-1
                     #Dica
                     print()
                     print("Dica: digite apenas o nome da sala")
@@ -413,53 +390,55 @@ def main():
             nome_cenario_atual = cenario_atual
             
             #charada
-            if escolha == "charada":
+            while escolha == "charada":
+                print("----------------")
+                print("A grande charada")
+                print("----------------")
                 print("Ai vai a charada: ")
                 print("Qual é o animal que caminha sobre quatro pernas de ")
                 print("manhã, duas pernas durante a tarde e três pernas a noite?")
-                resposta = input("qual a resposta da charada? ")
+                resposta = input("digite a resposta da charada:  ")
+                tentativa=1
+                print("tentativas = {}".format(tentativa))
+                
                 if resposta == "homem" or resposta == "ser humano":
+                    tentativa+=1
+                    print("tentativas = {}".format(tentativa))
                     cenario_atual = "bilhete"
                     print()
-                    print("parabéns! Você acertou a charada feita por Humberto e, com isso, você recebe um prêmio... ")
+                    print('-------------------')
+                    print("parabéns! Você acertou a charada feita por Humberto em {} tentativas"
+                          " e, com isso, você recebe um prêmio... ".format(tentativa))
                     print()
-                    print("Um bilhete! Seráessa  a próxima pista para encontrar Raul?")
+                    print("Um bilhete!")
+                    print("Será essa a próxima pista para encontrar Raul?")
+                    print('-------------------')
+                        
+                    #Inventario
+                    print('você deseja adcionar o bilhete ao inventario?')
+                    bilhete=input("sim ou não?")
+                        
+                    if bilhete == "sim":
+                        inventario.append('bilhete')
+                        print('voce adcionou o bilhete ao seu inventario')
+                        print("agora possui os seguintes items em seu inventario:{}".format(inventario))
+                    else:
+                        print('você decidiu apenas ler o bilhete rapidamente para'
+                              'salvar Raul o mais rápido possivel')
+                                
+                    print()
                     print("-"*len(cenarios[cenario_atual]["titulo"]))
                     print(cenarios[cenario_atual]["titulo"])
                     print("-"*len(cenarios[cenario_atual]["titulo"]))
                     print(cenarios[cenario_atual]["descricao"])
                     print()
+                    
                     print("essas são as opções que voçê possui: ")
                     opcoes = cenarios[cenario_atual]['opcoes']
                     print("-------------------")
                     for k,v in (cenarios[cenario_atual]["opcoes"]).items():
                         print (k,":",v)
-                        print("-------------------")
-                        
-                    if len(opcoes) == 0:
-                        print("Acabaram-se suas opções!")
-                        game_over = True
-                    else:
-                        escolha = input("para onde deseja ir ?")
-                        if escolha in opcoes:
-                            cenario_atual = escolha
-                            nome_cenario_atual= cenario_atual
-                    
-                    
-                else:
-                    while resposta != "homem" or resposta != "ser humano":
-                        print("essa não é a resposta correta")
-                        print("tente novamente")
-                        print()
-                        resposta = input("qual a resposta da charada? ")
-                
-                    
-                    
-                    opcoes = cenario_atual['opcoes']
                     print("-------------------")
-                    for k,v in (cenario_atual["opcoes"]).items():
-                        print (k,":",v)
-                        print("-------------------")
                         
                     if len(opcoes) == 0:
                         print("Acabaram-se suas opções!")
@@ -469,7 +448,7 @@ def main():
                         if escolha in opcoes:
                             cenario_atual = escolha
                             nome_cenario_atual= cenario_atual
-                    
+                            
                         tentativa=0
                         while escolha not in opcoes:
                             print("-------------------")
@@ -477,7 +456,7 @@ def main():
                             escolha = input("Escolha novamente, para onde deseja ir? ")  
                             print("-------------------")
                             tentativa+=1
-                #Garantindo as opções ao jogar    
+                            #Garantindo as opções ao jogar    
                             if tentativa == 1:
                                 print("essa opção não existe")
                                 print()
@@ -486,13 +465,76 @@ def main():
                                 print()
                                 for k,v in (cenario_atual["opcoes"]).items():
                                     print (k,":",v)
-                                tentativa=0
-                    #Dica
+                                tentativa=-1
+                                #Dica
                                 print()
                                 print("Dica: digite apenas o nome da sala")
                                 print("Exemplo: 'nome da sala 1'")
-            
-            
+                    if escolha in opcoes:
+                        cenario_atual = escolha
+                        nome_cenario_atual = cenario_atual
+                    
+                if resposta != "homem" or resposta != "ser humano":
+                    print("essa não é a resposta correta!")
+                    print("tente novamente")
+                    print()
+                    resposta = input("qual a resposta da charada? ")
+                    tentativa+=1
+                    print("tentativas = {}".format(tentativa))
+                    
+            #Chave
+            if escolha == "livro 3":
+                    print()
+                    print("-"*len(cenarios[cenario_atual]["titulo"]))
+                    print(cenarios[cenario_atual]["titulo"])
+                    print("-"*len(cenarios[cenario_atual]["titulo"]))
+                    print(cenarios[cenario_atual]["descricao"])
+                    print()
+                    
+                    inventario.append('chave')
+                    print('voce decidiu adcionar a chave ao seu inventario')
+                    print("agora possui os seguintes items em seu inventario:{}".format(inventario))
+                    
+                    print("essas são as opções que voçê possui: ")
+                    opcoes = cenarios[cenario_atual]['opcoes']
+                    print("-------------------")
+                    for k,v in (cenarios[cenario_atual]["opcoes"]).items():
+                        print (k,":",v)
+                    print("-------------------")
+                        
+                    if len(opcoes) == 0:
+                        print("Acabaram-se suas opções!")
+                        game_over = True
+                    else:
+                        escolha = input("para onde deseja ir ?")
+                        if escolha in opcoes:
+                            cenario_atual = escolha
+                            nome_cenario_atual= cenario_atual
+                            
+                        tentativa=0
+                        while escolha not in opcoes:
+                            print("-------------------")
+                            print("reveja suas opções")
+                            escolha = input("Escolha novamente, para onde deseja ir? ")  
+                            print("-------------------")
+                            tentativa+=1
+                            #Garantindo as opções ao jogar    
+                            if tentativa == 1:
+                                print("essa opção não existe")
+                                print()
+                                print("-------------------")
+                                print("Essas são suas opcões:")
+                                print()
+                                for k,v in (cenario_atual["opcoes"]).items():
+                                    print (k,":",v)
+                                tentativa=-1
+                                #Dica
+                                print()
+                                print("Dica: digite apenas o nome da sala")
+                                print("Exemplo: 'nome da sala 1'")
+                    if escolha in opcoes:
+                        cenario_atual = escolha
+                        nome_cenario_atual = cenario_atual
             
             #Teletrasporte
             if escolha == "sala":
@@ -530,7 +572,7 @@ def main():
                     print("sala inválida")
                     escolha = input("tente novamente: ")
                     
-                # IF Abrir
+            # IF Abrir
             if escolha == "abrir":
                 cenario_atual = "abrir"
                 print("-"*len(cenarios[cenario_atual]["titulo"]))
@@ -539,7 +581,7 @@ def main():
                 print(cenarios[cenario_atual]["descricao"])
                 game_over = True
                 
-                #IF ir embora
+            #IF ir embora
             if escolha == "ir embora":
                 cenario_atual = "ir embora"
                 print("-"*len(cenarios[cenario_atual]["titulo"]))
@@ -551,16 +593,6 @@ def main():
                 
     if game_over == True:
         print("você concluiu o jogo!")
-                
-                
-                
-                
-                
-                
-                
-                
-        
-                
                 
                     
                 #ATE AQUI FUNCIONA!!!!
