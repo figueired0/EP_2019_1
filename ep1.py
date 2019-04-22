@@ -55,7 +55,7 @@ def main():
             print("Acabaram-se suas opções!")
             game_over = True
         else:
-            escolha = input("para onde deseja ir ?")
+            escolha = input("para onde deseja ir ? ")
             if escolha in opcoes:
                 cenario_atual = escolha
                 nome_cenario_atual= cenario_atual
@@ -64,7 +64,7 @@ def main():
             while escolha not in opcoes:
                 print("-------------------")
                 print("reveja suas opções")
-                escolha = input("Escolha novamente, para onde deseja ir? ")  
+                escolha = input("Escolha novamente, para onde deseja ir?   ")  
                 print("-------------------")
                 tentativa+=1
                 #Garantindo as opções ao jogar    
@@ -87,7 +87,8 @@ def main():
             nome_cenario_atual = cenario_atual
             
             #charada
-            while escolha == "charada":
+            tries=1
+            if escolha == "charada":
                 print("----------------")
                 print("A grande charada")
                 print("----------------")
@@ -95,89 +96,87 @@ def main():
                 print("Qual é o animal que caminha sobre quatro pernas de ")
                 print("manhã, duas pernas durante a tarde e três pernas a noite?")
                 resposta = input("digite a resposta da charada:  ")
-                tries=1
                 print("tentativas = {}".format(tries))
-                tries+=1
-                
-                if resposta == "homem" or resposta == "ser humano":
-                    print("tentativas = {}".format(tries))
-                    cenario_atual = "bilhete"
-                    print()
-                    print('-------------------')
-                    print("parabéns! Você acertou a charada feita por Humberto em {} tentativas"
-                          " e, com isso, você recebe um prêmio... ".format(tries))
-                    print()
-                    print("Um bilhete!")
-                    print("Será essa a próxima pista para encontrar Raul?")
-                    print('-------------------')
+                while escolha == "charada":
+                    if resposta == "homem" or resposta == "ser humano":
+                        cenario_atual = "bilhete"
+                        print()
+                        print('-------------------')
+                        print("parabéns! Você acertou a charada feita por Humberto em {} tentativas"
+                              " e, com isso, você recebe um prêmio... ".format(tries))
+                        print()
+                        print("Um bilhete!")
+                        print("Será essa a próxima pista para encontrar Raul?")
+                        print('-------------------')
+                            
+                        #Inventario
+                        print('você deseja adcionar o bilhete ao inventario?')
+                        bilhete=input("sim ou não?")
+                            
+                        if bilhete == "sim":
+                            inventario.append('bilhete')
+                            print('voce adcionou o bilhete ao seu inventario')
+                            print("agora possui os seguintes items em seu inventario:{}".format(inventario))
+                        else:
+                            print('você decidiu apenas ler o bilhete rapidamente para'
+                                  'salvar Raul o mais rápido possivel')
+                                    
+                        print()
+                        print("-"*len(cenarios[cenario_atual]["titulo"]))
+                        print(cenarios[cenario_atual]["titulo"])
+                        print("-"*len(cenarios[cenario_atual]["titulo"]))
+                        print(cenarios[cenario_atual]["descricao"])
+                        print()
                         
-                    #Inventario
-                    print('você deseja adcionar o bilhete ao inventario?')
-                    bilhete=input("sim ou não?")
-                        
-                    if bilhete == "sim":
-                        inventario.append('bilhete')
-                        print('voce adcionou o bilhete ao seu inventario')
-                        print("agora possui os seguintes items em seu inventario:{}".format(inventario))
-                    else:
-                        print('você decidiu apenas ler o bilhete rapidamente para'
-                              'salvar Raul o mais rápido possivel')
+                        print("essas são as opções que voçê possui: ")
+                        opcoes = cenarios[cenario_atual]['opcoes']
+                        print("-------------------")
+                        for k,v in (cenarios[cenario_atual]["opcoes"]).items():
+                            print (k,":",v)
+                        print("-------------------")
+                            
+                        if len(opcoes) == 0:
+                            print("Acabaram-se suas opções!")
+                            game_over = True
+                        else:
+                            escolha = input("para onde deseja ir ?")
+                            if escolha in opcoes:
+                                cenario_atual = escolha
+                                nome_cenario_atual= cenario_atual
                                 
-                    print()
-                    print("-"*len(cenarios[cenario_atual]["titulo"]))
-                    print(cenarios[cenario_atual]["titulo"])
-                    print("-"*len(cenarios[cenario_atual]["titulo"]))
-                    print(cenarios[cenario_atual]["descricao"])
-                    print()
-                    
-                    print("essas são as opções que voçê possui: ")
-                    opcoes = cenarios[cenario_atual]['opcoes']
-                    print("-------------------")
-                    for k,v in (cenarios[cenario_atual]["opcoes"]).items():
-                        print (k,":",v)
-                    print("-------------------")
-                        
-                    if len(opcoes) == 0:
-                        print("Acabaram-se suas opções!")
-                        game_over = True
-                    else:
-                        escolha = input("para onde deseja ir ?")
+                            tentativa=0
+                            while escolha not in opcoes:
+                                print("-------------------")
+                                print("reveja suas opções")
+                                escolha = input("Escolha novamente, para onde deseja ir?   ")  
+                                print("-------------------")
+                                tentativa+=1
+                                #Garantindo as opções ao jogar    
+                                if tentativa == 1:
+                                    print("essa opção não existe")
+                                    print()
+                                    print("-------------------")
+                                    print("Essas são suas opcões:")
+                                    print()
+                                    for k,v in (cenario_atual["opcoes"]).items():
+                                        print (k,":",v)
+                                    tentativa=-1
+                                    #Dica
+                                    print()
+                                    print("Dica: digite apenas o nome da sala")
+                                    print("Exemplo: 'nome da sala 1'")
+                                    
                         if escolha in opcoes:
                             cenario_atual = escolha
-                            nome_cenario_atual= cenario_atual
-                            
-                        tentativa=0
-                        while escolha not in opcoes:
-                            print("-------------------")
-                            print("reveja suas opções")
-                            escolha = input("Escolha novamente, para onde deseja ir? ")  
-                            print("-------------------")
-                            tentativa+=1
-                            #Garantindo as opções ao jogar    
-                            if tentativa == 1:
-                                print("essa opção não existe")
-                                print()
-                                print("-------------------")
-                                print("Essas são suas opcões:")
-                                print()
-                                for k,v in (cenario_atual["opcoes"]).items():
-                                    print (k,":",v)
-                                tentativa=-1
-                                #Dica
-                                print()
-                                print("Dica: digite apenas o nome da sala")
-                                print("Exemplo: 'nome da sala 1'")
-                                
-                    if escolha in opcoes:
-                        cenario_atual = escolha
-                        nome_cenario_atual = cenario_atual
-                    
-                if resposta != "homem" or resposta != "ser humano":
-                    print("essa não é a resposta correta!")
-                    print("tente novamente")
-                    print()
-                    resposta = input("qual a resposta da charada? ")
-                    print("tentativas = {}".format(tries))
+                            nome_cenario_atual = cenario_atual
+                        
+                    if resposta != "homem" or resposta != "ser humano":
+                        print("essa não é a resposta correta!")
+                        print("tente novamente")
+                        print()
+                        resposta = input("qual a resposta da charada? ")
+                        tries+=1
+                        print("tentativas = {}".format(tries))
                     
             #Chave
             if escolha == "livro 3":
@@ -212,7 +211,7 @@ def main():
                         while escolha not in opcoes:
                             print("-------------------")
                             print("reveja suas opções")
-                            escolha = input("Escolha novamente, para onde deseja ir? ")  
+                            escolha = input("Escolha novamente, para onde deseja ir?   ")  
                             print("-------------------")
                             tentativa+=1
                             #Garantindo as opções ao jogar    

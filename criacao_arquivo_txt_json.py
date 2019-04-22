@@ -40,7 +40,7 @@ cenarios={
    },
    "perguntar":{  
       "titulo":"A grande pista",
-      "descricao":"após perguntar sobre Raul, a recepcionista diz que o /n viu indo para o banheiro a pouco tempo",
+      "descricao":"após perguntar sobre Raul, a recepcionista diz que o viu indo para o banheiro a pouco tempo",
       "opcoes":{  
          "saguão 2":"voltar ao saguão"
       }
@@ -78,7 +78,7 @@ cenarios={
    },
    "banheiro 2":{  
       "titulo":"banheiro",
-      "descricao":"voce chegou no banheiro, será que raul está aqui? /n Dê uma olhada! /n Você escuta gritos, será que deve investigar?",
+      "descricao":"voce chegou no banheiro, será que raul está aqui?  Dê uma olhada!  Você escuta gritos, será que deve investigar?",
       "opcoes":{  
          "saguão 2":"voltar ao saguão",
          "porta 1":"abrir a porta"
@@ -86,7 +86,7 @@ cenarios={
    },
    "porta 1":{  
       "titulo":"Porta trancada",
-      "descricao":"Apos tentar abrir a porta do banheiro /n voce percebe que ela esta trancada. /n Voce precisa encontrar uma chave",
+      "descricao":"Apos tentar abrir a porta do banheiro  voce percebe que ela esta trancada.  Voce precisa encontrar uma chave",
       "opcoes":{  
          "saguão 3":"voltar ao saguão"
       }
@@ -108,7 +108,7 @@ cenarios={
    },
    "sala dos professores 3":{  
       "titulo":"Sala dos professores",
-      "descricao":"voce entrou na sala dos professores e se depara com /n o professor Humberto",
+      "descricao":"voce entrou na sala dos professores e se depara com  o professor Humberto",
       "opcoes":{  
          "questionar":"perguntar sobre Raul",
          "saguão 3":"voltar ao saguão"
@@ -116,7 +116,7 @@ cenarios={
    },
    "questionar":{  
       "titulo":"O grande desafio",
-      "descricao":"Humberto acordou engraçado hoje e decidiu que só te contará /n onde Raul está se você advinhar uma charada",
+      "descricao":"Humberto acordou engraçado hoje e decidiu que só te contará  onde Raul está se você advinhar uma charada",
       "opcoes":{  
          "charada":"perguntar sobre a charada",
          "saguão 3":"voltar ao saguão"
@@ -129,7 +129,7 @@ cenarios={
    },
    "bilhete":{  
       "titulo":"O bilhete",
-      "descricao":"há um tempo atrás, para uma questão de segurança, foram escondidas uma série de /n chaves, as quais abriam diversas portas no Insper. /n A chave do banheiro em questão foi escondida em um livro na biblioteca /n Esses são os possíveis lugares que ela pode estar: /n Livro 1: Mãos a obra, construindo um banheiro /n Livro 2: O enigma do banheiro /n Livro 3: Pythopolis, em busca da chave perdida",
+      "descricao":"há um tempo atrás, para uma questão de segurança, foram escondidas uma série de  chaves, as quais abriam diversas portas no Insper.  A chave do banheiro em questão foi escondida em um livro na biblioteca  Esses são os possíveis lugares que ela pode estar:  Livro 1: Mãos a obra, construindo um banheiro  Livro 2: O enigma do banheiro  Livro 3: Pythopolis, em busca da chave perdida",
       "opcoes":{  
          "saguão 4":"voltar ao saguão"
       }
@@ -152,7 +152,7 @@ cenarios={
    },
    "livros":{  
       "titulo":"A procura da chave",
-      "descricao":"Dentre todos as descrições que havia no bilhete de /n Humberto, você encontrou três livros onde a chave /n pode estar",
+      "descricao":"Dentre todos as descrições que havia no bilhete de  Humberto, você encontrou três livros onde a chave  pode estar",
       "opcoes":{  
          "livro 1":"Investigar livro 1; ",
          "livro 2":"Investigar livro 2; ",
@@ -161,7 +161,7 @@ cenarios={
    },
    "livro 1":{  
       "titulo":"Livro 1: Mãos a obra, construindo um banheiro",
-      "descricao":"Ao pegar o livro na mão, você decide folea-lo /n e não encontra nada. Sendo assim, você decide /n olhar o próximo",
+      "descricao":"Ao pegar o livro na mão, você decide folea-lo  e não encontra nada. Sendo assim, você decide  olhar o próximo",
       "opcoes":{  
          "livro 2":"Investigar livro 2",
          "livro 3":"Investigar livro 3"
@@ -169,7 +169,7 @@ cenarios={
    },
    "livro 2":{  
       "titulo":"Livro 2: O enigma do banheiro ",
-      "descricao":"Ao pegar o livro na mão, você decide folea-lo /n e não encontra nada. Sendo assim, você decide /n olhar o próximo",
+      "descricao":"Ao pegar o livro na mão, você decide folea-lo  e não encontra nada. Sendo assim, você decide  olhar o próximo",
       "opcoes":{  
          "livro 1":"Investigar livro 1",
          "livro 3":"Investigar livro 3"
@@ -177,7 +177,7 @@ cenarios={
    },
    "livro 3":{  
       "titulo":"Livro 3: Pythopolis, em busca da chave perdida",
-      "descricao":"Ao pegar o livro na mão, você decide folea-lo /n e encontra algo misterioso no meio. /n (...) /n Após investigar profundamente, você perebe que /n esta é a chave desejada para abrir o banheiro /n e salvar Raul. /n Será que você conseguirá adiar o EP1?",
+      "descricao":"Ao pegar o livro na mão, você decide folea-lo  e encontra algo misterioso no meio.  (...)  Após investigar profundamente, você perebe que  esta é a chave desejada para abrir o banheiro  e salvar Raul.  Será que você conseguirá adiar o EP1?",
       "opcoes":{  
          "saguão":"voltar ao saguão",
          "sala":"ir para outra sala"
@@ -185,7 +185,7 @@ cenarios={
    },
    "sala dos professores":{  
       "titulo":"Sala dos professores",
-      "descricao":"você chegou na sala dos professores e, assim que /n abriu a porta, se deparou com Humberto fazendo aula de yoga /n com Fabio Roberto Miranda. /n Você decidiu abandorar a missão de salvar Raul e /n fazer yoga com eles"
+      "descricao":"você chegou na sala dos professores e, assim que  abriu a porta, se deparou com Humberto fazendo aula de yoga  com Fabio Roberto Miranda.  Você decidiu abandorar a missão de salvar Raul e  fazer yoga com eles"
    },
    "banheiro 4":{  
       "titulo":"Banheiro",
@@ -203,7 +203,7 @@ cenarios={
    },
    "banheiro":{  
       "titulo":"O grande final",
-      "descricao":"Você chegou ao banheiro e agora possui a chave para /n abrir a tão estimada porta. /n O que você irá fazer?",
+      "descricao":"Você chegou ao banheiro e agora possui a chave para  abrir a tão estimada porta.  O que você irá fazer?",
       "opcoes":{  
          "porta 2":"Abrir a porta"
       }
@@ -218,7 +218,7 @@ cenarios={
    },
    "abrir":{  
       "titulo":"Adiantamento do EP",
-      "descricao":"Vôce cola a chave na maceneta e, ao abri-la /n (...)  /n Voce se depara com Raul, desolado e perdido no canto /n do banheiro. /n Porém, no momento em que há troca de olhares, a felicidade /n é estampada em seu rosto e IMEDIATAMENTE, Raul pula em você /n e te agradece ferverosamente. /n Você aproveita a ocasiao para perguntar sobre o EP1 e se seria /n possivel o adiantamento desse. /n Devido a extrema gratidão de Raul, ele te concede mais 1h a mais /n para entrega."
+      "descricao":"Vôce cola a chave na maceneta e, ao abri-la  (...)   Voce se depara com Raul, desolado e perdido no canto  do banheiro.  Porém, no momento em que há troca de olhares, a felicidade  é estampada em seu rosto e IMEDIATAMENTE, Raul pula em você  e te agradece ferverosamente.  Você aproveita a ocasiao para perguntar sobre o EP1 e se seria  possivel o adiantamento desse.  Devido a extrema gratidão de Raul, ele te concede mais 1h a mais  para entrega."
    },
    "saguão 6":{  
       "titulo":"Saguão do Insper",
@@ -229,7 +229,7 @@ cenarios={
    },
    "ir embora":{  
       "titulo":"A melhor solução",
-      "descricao":"Você não gosta de Raul e, portanto, decide mante-lo trancado /n no banheiro para sempre. /n Raul morre de fome e solidão e você não precisa entregar o EP"
+      "descricao":"Você não gosta de Raul e, portanto, decide mante-lo trancado  no banheiro para sempre.  Raul morre de fome e solidão e você não precisa entregar o EP"
    }
 }
    
