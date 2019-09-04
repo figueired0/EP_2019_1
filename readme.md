@@ -1,4 +1,4 @@
-Exercício Programa - 2019/1 - Design de Software
+Projeto 1 - 2019/1 - Design de Software
 ------------------------------------------------
 
 Alunos: 
